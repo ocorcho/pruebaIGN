@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:UrbanArea" "base:City" "base:LuxuryHotel" "base:Hotel" "base:Campground" "base:Town" "base:Sightseeing" "base:RuralArea" "base:NationalPark" "base:BedAndBreakfast" "base:Destination" "base:Capital" "base:Beach" "base:Hiking" "base:Sunbathing" "base:Museums" "base:Accommodation" "base:Yoga" "base:Relaxation" "base:Farmland" "base:Surfing" "base:Activity" "base:BunjeeJumping" "base:Adventure" "base:Safari" "base:Sports" ; /*classes style*/
+	"base:Relaxation" -> "base:Activity" [ label = "rdfs:subClassOf" ];
+	"base:Capital" -> "base:City" [ label = "rdfs:subClassOf" ];
+	"base:BedAndBreakfast" -> "base:Accommodation" [ label = "rdfs:subClassOf" ];
+	"base:Town" -> "base:UrbanArea" [ label = "rdfs:subClassOf" ];
+	"base:NationalPark" -> "base:RuralArea" [ label = "rdfs:subClassOf" ];
+	"base:City" -> "base:UrbanArea" [ label = "rdfs:subClassOf" ];
+	"base:Sports" -> "base:Activity" [ label = "rdfs:subClassOf" ];
+	"base:Surfing" -> "base:Sports" [ label = "rdfs:subClassOf" ];
+	"base:Farmland" -> "base:RuralArea" [ label = "rdfs:subClassOf" ];
+	"base:Museums" -> "base:Sightseeing" [ label = "rdfs:subClassOf" ];
+	"base:UrbanArea" -> "base:Destination" [ label = "rdfs:subClassOf" ];
+	"base:Yoga" -> "base:Relaxation" [ label = "rdfs:subClassOf" ];
+	"base:Safari" -> "base:Sightseeing" [ label = "rdfs:subClassOf" ];
+	"base:Safari" -> "base:Adventure" [ label = "rdfs:subClassOf" ];
+	"base:RuralArea" -> "base:Destination" [ label = "rdfs:subClassOf" ];
+	"base:LuxuryHotel" -> "base:Hotel" [ label = "rdfs:subClassOf" ];
+	"base:Sightseeing" -> "base:Activity" [ label = "rdfs:subClassOf" ];
+	"base:Campground" -> "base:Accommodation" [ label = "rdfs:subClassOf" ];
+	"base:Hotel" -> "base:Accommodation" [ label = "rdfs:subClassOf" ];
+	"base:Beach" -> "base:Destination" [ label = "rdfs:subClassOf" ];
+	"base:Hiking" -> "base:Sports" [ label = "rdfs:subClassOf" ];
+	"base:BunjeeJumping" -> "base:Adventure" [ label = "rdfs:subClassOf" ];
+	"base:Adventure" -> "base:Activity" [ label = "rdfs:subClassOf" ];
+	"base:Sunbathing" -> "base:Relaxation" [ label = "rdfs:subClassOf" ];
+
+}
